@@ -1,5 +1,4 @@
-swirl courses
-=============
+# swirl courses
 
 This is a collection of interactive courses for use with the [swirl R package](http://swirlstats.com). You'll find instructions for installing courses further down on this page. Some courses are still in development and we'd love to hear any [suggestions](https://github.com/swirldev/swirl_courses/issues/new) you have as you work through them.
 
@@ -10,7 +9,7 @@ Here are our current offerings, organized by level of difficulty:
 #### Beginner
 
 - **R Programming**: The basics of programming in R
-- **R Programming Alt**: Same as the original, but modified slightly for in-class use (see below ***)
+- [**R Programming E**](https://github.com/swirldev/R_Programming_E): Same as the original, but modified slightly for in-class use (see below ***)
 - **Data Analysis**: Basic ideas in statistics and data visualization
 - **Mathematical Biostatistics Boot Camp**: One- and two-sample t-tests, power, and sample size
 - **Open Intro**: A very basic introduction to statistics, data analysis, and data visualization
@@ -34,6 +33,13 @@ relevance to big data, issues of multiple testing and resampling.
 
 Since our users come from a variety backgrounds, it's very hard to label material as **Beginner**, **Intermediate**, or **Advanced**. If you find something that is labelled **Beginner** to be challenging, please don't be discouraged. The first step of learning anything is to acknowledge that you are capable of understanding it. True understanding will come with time and practice.
 
+#### Course Authors
+
+- **Writing swirl Courses**: An interactive guides and example 
+  for swirl course authors. The first group of lessons cover basics. The rest cover 
+  special topics useful primarily as samples--points of departure for one's own material.
+  For more comprehensive documentation about writing your won swirl courses see http://swirlstats.com/swirlify/.
+
 ## Install and run a course automatically from swirl
 
 **This is the preferred method of installing courses.** It automates the process by allowing you to do everything right from the R console.
@@ -48,11 +54,11 @@ install.packages("swirl")
 
 ```
 library(swirl)
-install_from_swirl("Course Name Here")
+install_course("Course Name Here")
 swirl()
 ```
 
-For example, `install_from_swirl("R Programming")` will install the R Programming course. **Please note that course names are case sensitive!**
+For example, `install_course("R Programming")` will install the R Programming course. **Please note that course names are case sensitive!**
 
 If that doesn't work for you...
 
@@ -60,7 +66,7 @@ If that doesn't work for you...
 
 If the automatic course installation method outlined above does not work for you, then there's a simple alternative.
 
-1) Click on the **Download ZIP** button on the righthand side of this page.
+1) Click [**here**](https://github.com/swirldev/swirl_courses/archive/master.zip) to download the file `swirl_courses-master.zip`.
 
 2) Enter the following from the R console, **substituting the correct file path** to your downloaded file and the **name of your desired course**:
 
